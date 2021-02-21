@@ -8,8 +8,13 @@
 
 
 class SinglyLinkedList:
+    class Node:
+        def __init__(self, data):
+            self.data = data
+            self.next = None
+
     def __init__(self):
-        pass
+        self.head = None
 
     def find_by_value(self, value):
         pass
