@@ -57,6 +57,9 @@ class Array:
             self.data[i] = self.data[i+1]
 
         self.count -= 1
+        # 实际元素小于容量的1/4
+        # 缩容后数组容量不能为空
+        # 缩容后容量大于等于初始容量
         if self.count <= self.capacity//4 and self.capacity//2 != 0 and self.capacity//2 >= self.init_capacity:
             self.resize(self.capacity//2)
 
